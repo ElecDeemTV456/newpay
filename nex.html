@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finančná správa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        /* Horní bílý proužek */
+        .top-bar {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .top-bar button {
+            margin-left: 10px;
+            padding: 5px 15px;
+            background-color: #cc0033;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Modrá část s logem a navigací */
+        header {
+            background-color: #002f87;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 60px;
+        }
+        header nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        .search-bar {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 40%;
+            padding: 10px;
+            border: 1px white;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .banner {
+            text-align: center;
+            margin: 20px 0;
+            background-color: white;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 10px;
+        }
+        .box h3 {
+            color: #cc0033;
+        }
+        .box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .box ul li {
+            margin: 10px 0;
+        }
+        .box ul li a {
+            text-decoration: none;
+            color: #002f87;
+        }
+        .quick-links, .contacts {
+            display: flex;
+            flex-direction: column;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Horní bílý proužek s přihlášením -->
+<div class="top-bar">
+    <button>Přihlásení</button>
+    <button>Registrace</button>
+</div>
+
+<!-- Modrá část s logem a navigací -->
+<header>
+    <img src="logo.webp" alt="Finančná správa Slovenskej republiky">
+    <nav>
+        <a href="#">Finančná správa</a>
+        <a href="#">Formuláre</a>
+        <a href="#">Kontakty</a>
+        <a href="#">FAQ</a>
+        <a href="#">English</a>
+    </nav>
+</header>
+
+<div class="search-bar">
+    <input type="text" placeholder="Chcem nájsť...">
+</div>
+
+<div class="banner">
+    <img src="image0.webp" alt="Přidejte se k nám">
+    <button src="image0.webp" onclick=""></button>
+</div>
+
+<div class="main-content">
+    <div class="box">
+        <h3>Podnikatelia a organizácie</h3>
+        <ul>
+            <li><a href="#">Povinnosť registrácie za platiteľa DPH</a></li>
+            <li><a href="#">Kúpa a predaj nového auta v rámci EÚ</a></li>
+            <li><a href="#">Index daňovej spoľahlivosti</a></li>
+            <li><a href="#">Paušálne výdavky v užívaní fyzickej osoby</a></li>
+            <li><a href="#">Úprava základu dane z príjmov FO</a></li>
+            <li><a href="#">Registrácia OSS</a></li>
+            <li><a href="#">Registrácia používateľa pre DAC7</a></li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h3>Občania</h3>
+        <ul>
+            <li><a href="#">Kariéra - voľné pracovné miesta</a></li>
+            <li><a href="#">Študent v zahraničí</a></li>
+            <li><a href="#">Doviezol som automobil zo zahraničia</a></li>
+            <li><a href="#">Prenajímam nehnuteľnosť</a></li>
+            <li><a href="#">Mám príjmy zo zahraničia</a></li>
+            <li><a href="#">e-commerce - praktické informácie</a></li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h3>Odborná verejnosť</h3>
+        <ul>
+            <li><a href="#">Autorizácia k daňovému subjektu</a></li>
+            <li><a href="#">Splnomocnenie na zastupovanie</a></li>
+            <li><a href="#">Tarif/Kvóta</a></li>
+            <li><a href="#">Informácie k Ukrajine - colné</a></li>
+            <li><a href="#">Informácie k Ukrajine - daňové</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="box quick-links">
+        <h3>Elektronické služby</h3>
+        <ul>
+            <li><a href="#">eFormuláre</a></li>
+            <li><a href="#">eKomunikácia - dane</a></li>
+            <li><a href="#">Overenie IČ DPH</a></li>
+            <li><a href="#">Overenie prideleného OÚD</a></li>
+            <li><a href="#">eKomunikácia - clo, EMCS</a></li>
+            <li><a href="#">Certifikáty e-služieb FS</a></li>
+        </ul>
+    </div>
+
+    <div class="box contacts">
+        <h3>Kontakty</h3>
+        <ul>
+            <li>INFOLINKA: 048 / 43 17 222</li>
+            <li><a href="#">Live chat</a></li>
+            <li><a href="mailto:danova_oblast@financnasprava.sk">danova_oblast@financnasprava.sk</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    © 2024 Finančná správa Slovenskej republiky on SK:RP ERLC
+</footer>
+
+</body>
+</html>
